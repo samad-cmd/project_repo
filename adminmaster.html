@@ -1,0 +1,221 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+      <meta charset="utf-8" />
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0" />-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>PoL</title>
+	<!-- BOOTSTRAP STYLES-->
+    <link href="css/bootstrap.css" rel="stylesheet" />
+     <!-- FONTAWESOME STYLES-->
+    <link href="css/font-awesome.css" rel="stylesheet" />
+        <!-- CUSTOM STYLES-->
+    <link href="css/custom.css" rel="stylesheet" />
+     <!-- GOOGLE FONTS-->
+   <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+   
+</head>
+<body>
+     
+           
+          
+    <div id="wrapper">
+         <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="adjust-nav">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">
+                        <img src="img/logo1.png"/>
+
+                    </a>
+                    
+                </div>
+              
+                <span class="logout-spn" >
+                  <a href="login.php" style="color:#fff;">LOGIN</a>  
+
+                </span>
+            </div>
+        </div>
+        <!-- /. NAV TOP  -->
+        <nav class="navbar-default navbar-side" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav" id="main-menu">
+                 
+
+
+                    <li class="active-link">
+                        <a href="dashboard.html" ><i class="fa fa-desktop "></i>Dashboard <span class="badge">Included</span></a>
+                    </li>
+                    <li>
+                      <a href="admin.html"><i class="fa fa-key fa-x"></i>Admin </a>
+                    </li>
+                    <li>
+                      <a href="register.html"><i class="fa fa-user fa-x"></i>    Register User </a> 
+                    </li>
+                    <li>
+                      <a href="users.html"><i class="fa fa-users fa-x"></i>  See Users</a>
+                    </li>
+                    <li>
+                      <a href="settings.html"><i class="fa fa-gear fa-x"></i>Settings</a>
+                    </li>
+                    <li>
+                      <a href="notifications.html"><i class="fa fa-bell-o fa-x"></i>Notifications </a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa fa-envelope-o fa-x"></i>Mail </a>
+                    </li>
+                    <li>
+                      <a href="support.html"><i class="fa fa-comments-o fa-x"></i>Support</a>
+                    </li>
+                    
+                </ul>
+                            </div>
+
+        </nav>
+        
+        <!-- /. NAV SIDE  -->
+       
+        <div id="page-wrapper" >
+          
+          <div id="page-inner">     
+
+           <!--   <div id="loginbox" style="margin-top:50px;" class="mainbox col-md-6 col-md-offset-3 col-sm-4 col-sm-offset-2"> 
+           -->
+           <div class="panel">   
+            <fieldset>
+              <legend>Admin Master</legend>            
+                <form>
+                    <div class="row">
+                        <div class="form-group col-md-4">
+                          <label for="inputState">Admin Type</label>
+          <select id="inputState" class="form-control">
+            <option selected>SuperAdmin</option>
+            <option>Admin</option>
+          </select></div></div>
+<div class="row">
+                   <div class="form-row">
+                  <div class="form-group col-md-4">
+                    <label for="inputAddress">Name Of Admin</label>
+                    
+                    <input type="text" class="form-control" name="admin_name"  placeholder="Admin Name">
+                  </div>
+                    </div>
+                  
+ 
+                </div>
+                <div class="row">
+                    <div class="form-row">
+                   <div class="form-group col-md-4">
+                     <label for="inputAddress">Admin Description</label>
+                     <textarea rows='2' columns='30' class="form-control" name="admin_desc" placeholder="Details or Description"></textarea>
+                   </div>
+                     </div>
+                   </div>
+                   <div class="row">
+                    <div class="form-row">
+                   <div class="form-group col-md-4">
+                     <label for="inputAddress">Admin Email</label>
+                     <input type="email" class="form-control"  name="email" >
+                  
+                     </div>
+                   </div>
+              
+                    <div class="form-row">
+                   <div class="form-group col-md-4">
+                     <label for="">Admin Mobile</label>
+                     <input type="number" class="form-control"  name="admin_mobile" placeholder="Admin Mobile" min="0" max="9999999999" >
+                   </div>
+                     </div>
+                   </div></div>
+                  <div class="form-row">
+                    <div class="form-group col-md-2 col-xs-2">
+                  <button type="submit" class="btn btn-primary">ADD</button>
+              
+                    </div>
+                <div class="form-group col-md-1 col-xs-2">
+              <button type="submit" class="btn btn-success">UPDATE</button>
+                </div>
+              <div class="form-group col-md-1 col-xs-2">
+                <button type="submit" class="btn btn-primary">CANCEL</button>
+         </div>
+          </div>
+          <br><br><br><br>
+    
+          <div class="row">
+                              <div class="col-lg-8 col-md-8 col-sm-8 ">
+                                  <h5><b>Admin List</b></h5>
+                                  <table class="table table-striped table-bordered table-hover">
+                                      <thead>
+                                          <tr>
+                                              <th>Sno.</th>
+                                              <th>Admin Id</th>
+                                              <th>Admin Type</th>
+                                              <th>Admin Description</th>
+                                              <th>Admin Email</th>
+                                              <th>Admin phone</th>
+                                              <th>Action</th>
+                                          </tr>
+                                      </thead>
+                                      <tbody>
+                                          <tr>
+                                              <td>1</td>
+                                              <td>0781D04</td>
+                                              <td>Admin</td>
+                                              <td>Admin-1</td>
+                                              <td>admin1@gmail.com</td>
+                                              <td>7835******</td>
+                                              <td> <a href="#">Edit</a></td>
+                                          </tr>
+                                          <tr>
+                                              <td>2</td>
+                                              <td>0781D05</td>
+                                              <td>Super Admin</td>
+                                              <td>Super Admin has all controls </td>
+                                              <td>superadmin1@gmail.com</td>
+                                              <td>7604******</td>
+                                              <td> <a href="#">Edit</a></td>
+                                          </tr>
+                                          <tr>
+                                              <td>3</td>
+                                              <td>0781D06</td>
+                                              <td>Admin</td>
+                                              <td>Admin-2</td>
+                                              <td>admin2@gmail.com</td>
+                                              <td>9543******</td>
+                                              <td> <a href="#">Edit</a></td>
+                                          </tr>
+                                          <tr>
+                                              <td>4</td>
+                                              <td>0781D07</td>
+                                              <td>Super Admin</td>
+                                              <td>Super Admin-2</td>
+                                              <td>superadmin2@gmail.com</td>
+                                              <td>9542******</td>
+                                              <td> <a href="#">Edit</a></td>
+                                          </tr>
+                                          
+                                      </tbody>
+                                  </table>
+          
+                              </div></div>
+</fieldset>
+</form></div></div> </div></div>
+
+
+         
+             
+
+           
+           
+
+  
+   
+</body>
+</html>
+
